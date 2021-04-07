@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Davit's portfolio</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-</head>
-<body>
-	<header></header>
-	<div class="main container-fluid">
+	<head>
+		<title>Davit's portfolio</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	</head>
+	<body>
+<!-- 	<header>
+		<nav class="navbar navbar-dark"></nav>
+	</header>
+ -->	
+ 	<div class="main container-fluid">
 		<section class="row intro">
-
 			<div class="col-9 offset-1">
-				<div class="row intro-window">
 
+				<div class="row intro-window">
 					<div class="col-6 offset-1" id="intro-description">
 						<h1>Davit K.</h1>
 						<h1>Software Engineer</h1>
 						<h2>I am currently a senior studying Computer Science @ Earlham College.</h2>
 						
 					</div>
-
 					<div class="col-4 offset-1" id="face-div">
 						<img class="img-fluid" id="face" src="assets/images/davit.jpg">
 					</div>
@@ -44,10 +45,38 @@
 				</div>
 
 			</div>
+		</section>
+		<!-- PROJECTS TILES -->
+		<section class="row projects col-8 offset-2">
+			<h2 class="dark"> Projects </h2>
+
+			<div class="col-4">
+				<a href="project-blog.html">
+					<div class="tile" id="handwriting-tile">
+						<span>Handwriting Identification</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-4">
+				<a href="project-blog.html">
+					<div class="tile" id="sudoku-tile">
+						<span> Multiplayer Sudoku </span>
+					</div>
+				</a>
+			</div>
+			<div class="col-4">
+				<a href="project-blog.html">
+
+					<div class="tile" id="iceland-tile">
+						<span> Icelandic Field Studies </span>
+					</div>
+				</a>
+			</div>
 
 		</section>
+			
 	</div>
-	<footer></footer>
 
+<footer></footer>
 </body>
 </html>

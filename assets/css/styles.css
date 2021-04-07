@@ -4,9 +4,12 @@ body {
 a {
 	color: black;
 }
+* {
+	box-sizing: border-box;
+}
 
 #face{
-	margin-top: 30px;
+	margin-top: 50px;
 	margin-bottom: 30px;
 
 	border-radius: 50%;
@@ -15,8 +18,45 @@ a {
 }
 
 #intro-description {
-	margin-top: 70px;
+	margin-top: 90px;
 	margin-bottom: 40px;
+}
+
+#handwriting-tile {
+	background: url("../images/handwriting.jpg") no-repeat; 
+}
+
+#iceland-tile {
+	background: url("../images/drone.jpg") no-repeat; 
+}
+
+#sudoku-tile {
+	background: url("../images/sudoku.png") no-repeat; 
+}
+
+#handwriting-tile, #iceland-tile, #sudoku-tile {
+	background-size: 300px auto;
+}
+
+.tile span {
+	width: 100%;
+	text-align: center;
+	background-color: #FF5733;
+	opacity: 0.8;
+	position: absolute;
+}
+
+
+.tile {
+	border: 2px solid;
+	height: 225px;
+	width: 100%;
+	margin-bottom: 200px;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+	background-size: 225px 200px;
+
 }
 
 .contact-window {
@@ -30,6 +70,10 @@ a {
 	background-image: url("../images/background.png"); 
 }
 
+h2.dark {
+	text-align: center;
+	color: black;
+}
 /*.contact-window {
 	margin-left: 
 }*/
