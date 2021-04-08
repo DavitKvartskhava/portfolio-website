@@ -8,75 +8,98 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	</head>
 	<body>
-<!-- 	<header>
-		<nav class="navbar navbar-dark"></nav>
-	</header>
- -->	
- 	<div class="main container-fluid">
-		<section class="row intro">
-			<div class="col-9 offset-1">
-
-				<div class="row intro-window">
-					<div class="col-6 offset-1" id="intro-description">
-						<h1>Davit K.</h1>
-						<h1>Software Engineer</h1>
-						<h2>I am currently a senior studying Computer Science @ Earlham College.</h2>
-						
-					</div>
-					<div class="col-4 offset-1" id="face-div">
-						<img class="img-fluid" id="face" src="assets/images/davit.jpg">
-					</div>
-				</div>
-
-				<div class="row contact-window offset-1">
-					<div class="address col-4 contact-info">
-						<h3>Address</h3>
-						<div>801 National Road West</div>
-						<div>Richmond, IN</div>
-					</div>
-					<div class="phone-number col-4 contact-info">
-						<h3>Phone</h3>
-						<a href="tel:765-967-2466">765-967-2466</a>
-					</div>
-					<div class="email col-4 contact-info">
-						<h3>Email</h3>
-						<a href="mailto:davitkvarts@gmail.com">davitkvarts@gmail.com</a>
+		<header>
+			<!-- navbar -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">Home?</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#contact-window">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://drive.google.com/file/d/1-0p2O1oNsxSKS_Pc9OvGpjRgakPyVCS6/view" target="_blank">Resume</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#projects-row">Projects</a>
+							</li>
+						</ul>
 					</div>
 				</div>
+			</nav>
+			<!-- navbar ends here -->
+		</header>
 
-			</div>
-		</section>
-		<!-- PROJECTS TILES -->
-		<section class="row projects col-8 offset-2">
-			<h2 class="dark"> Projects </h2>
-
-			<div class="col-4">
-				<a href="project-blog.html">
-					<div class="tile" id="handwriting-tile">
-						<span>Handwriting Identification</span>
+		
+		<div class="main container-fluid">
+			<section class="row intro">
+				<div class="col-9 offset-1">
+					<div class="row intro-window">
+						<div class="col-6 offset-1" id="intro-description">
+							<h1>Davit K.</h1>
+							<h1>Software Engineer</h1>
+							<h2>I am currently a senior studying Computer Science @ Earlham College.</h2>
+							
+						</div>
+						<div class="col-4 offset-1" id="face-div">
+							<img class="img-fluid" id="face" src="assets/images/davit.jpg">
+						</div>
 					</div>
-				</a>
-			</div>
-			<div class="col-4">
-				<a href="project-blog.html">
-					<div class="tile" id="sudoku-tile">
-						<span> Multiplayer Sudoku </span>
+					<!-- contanct info -->
+					<div class="row offset-1" id="contact-window">
+						<div class="address col-4 contact-info">
+							<h3>Address</h3>
+							<div>801 National Road West</div>
+							<div>Richmond, IN</div>
+						</div>
+						<div class="phone-number col-4 contact-info">
+							<h3>Phone</h3>
+							<a href="tel:765-967-2466">765-967-2466</a>
+						</div>
+						<div class="email col-4 contact-info">
+							<h3>Email</h3>
+							<a href="mailto:davitkvarts@gmail.com">davitkvarts@gmail.com</a>
+						</div>
 					</div>
-				</a>
-			</div>
-			<div class="col-4">
-				<a href="project-blog.html">
-
-					<div class="tile" id="iceland-tile">
-						<span> Icelandic Field Studies </span>
-					</div>
-				</a>
-			</div>
-
-		</section>
+					<!-- contact info ends here -->
+				</div>
+			</section>
+			<!-- PROJECTS TILES -->
+			<section class="row col-8 offset-2" id="projects-row">
+				<h2 class="dark"> Projects </h2>
+				<div class="col-4">
+					<a href="project_blog.html">
+						<div class="tile" id="handwriting-tile">
+							<span>Handwriting Identification</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="project_blog.html">
+						<div class="tile" id="sudoku-tile">
+							<span> Multiplayer Sudoku </span>
+						</div>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="project_blog.html">
+						<div class="tile" id="iceland-tile">
+							<span> Icelandic Field Studies </span>
+						</div>
+					</a>
+				</div>
+			</section>
 			
-	</div>
+		</div>
 
-<footer></footer>
+	<!-- start footer -->
+	<footer></footer>
+	<!-- end footer -->
+	 <script src="js/script.js"></script>
+
 </body>
 </html>
