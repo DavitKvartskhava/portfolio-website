@@ -1,10 +1,12 @@
 import React from 'react'
+import Container from "react-bootstrap/Container";
+
 
 const ProjectsPanel = () => {
     return (
-        <div>
-            <h1>Testing</h1>
-        </div>
+        <Container>
+            <h1>Work</h1>
+        </Container>
     )
 }
 
