@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  color: black;
+}
+* {
+  box-sizing: border-box;
+}
+
+#face {
+  /* margin-top: 50px;
+  margin-bottom: 30px; */
+  height: 300px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 3px white solid;
+}
+
+#intro-description {
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+#handwriting-tile {
+  background: url("./images/handwriting.jpeg") no-repeat;
+}
+
+#iceland-tile {
+  background: url("./images/drone.jpeg") no-repeat;
+}
+
+#sudoku-tile {
+  background: url("./images/sudoku.png") no-repeat;
+}
+
+#handwriting-tile,
+#iceland-tile,
+#sudoku-tile {
+  background-size: 300px auto;
+}
+
+#contact-window {
+  margin-top: 70px;
+}
+
+.tile span {
+  width: 100%;
+  text-align: center;
+  background-color: #ff5733;
+  opacity: 0.8;
+  position: absolute;
+}
+
+.tile {
+  border: 2px solid;
+  height: 225px;
+  width: 100%;
+  margin-bottom: 200px;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  background-size: 225px 200px;
+  border-radius: 5%;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.intro {
+  background-image: url("./images/background.png");
+}
+
+h2.dark {
+  text-align: center;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  color: black;
+}
+h2 {
+  font-size: 20px;
+  color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
