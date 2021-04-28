@@ -8,14 +8,22 @@ body {
 a {
   color: black;
 }
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
 * {
   box-sizing: border-box;
 }
+#welcome {
+  margin-top: 50px;
+}
 
 #face {
-  margin-top: 50px;
-  margin-bottom: 30px;
-  height: 300px;
+  /* margin-top: 50px;
+  margin-bottom: 30px; */
+  /* height: 300px; */
+  width: 100%;
   border-radius: 50%;
   padding: 0px;
   border: 3px white solid;
@@ -24,18 +32,6 @@ a {
 #intro-description {
   margin-top: 100px;
   margin-bottom: 40px;
-}
-
-#handwriting-tile {
-  background: url("./images/handwriting.jpeg") no-repeat;
-}
-
-#iceland-tile {
-  background: url("./images/drone.jpeg") no-repeat;
-}
-
-#sudoku-tile {
-  background: url("./images/sudoku.png") no-repeat;
 }
 
 .line {
@@ -75,6 +71,11 @@ a {
   background-image: url("./images/background.png");
 }
 
+.projectBox {
+  border: solid 2px;
+  border-radius: 10%;
+  margin-right: 30px;
+}
 h2.dark {
   text-align: center;
   color: black;
