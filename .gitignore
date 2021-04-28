@@ -1,7 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 #temporarily
-back/index.js
 .vscode
 # dependencies
 client/node_modules
@@ -12,7 +11,6 @@ back/.pnp
 
 client/.pnp.js
 back/.pnp.js
-
 
 # testing
 client/coverage
@@ -25,6 +23,8 @@ back/build
 # misc
 **/.DS_Store
 
+back/.env
+
 client/.env.local
 client/.env.development.local
 client/.env.test.local
@@ -34,6 +34,7 @@ client/npm-debug.log*
 client/yarn-debug.log*
 client/yarn-error.log*
 
+back/.env
 back/.env.local
 back/.env.development.local
 back/.env.test.local
