@@ -8,7 +8,7 @@ class ProjectBox extends React.Component {
   render() {
     return (
       <>
-        <Col lg="3" md="3" sm="12" className="projectBox">
+        <Col md={{span:3}} sm="12" className="projectBox">
           <h4>{this.props.name}</h4>
           {/* {this.props.description} */}
           <img src={'/images/'+this.props.image} alt={this.props.description} height="auto" width="auto"/>

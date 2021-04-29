@@ -7,11 +7,13 @@ import ProjectBox from "./ProjectBox.js";
 
 const fetchData = () => {
   return axios
-    .get("http://localhost:3000/api/projects")
+    .get("http://localhost:3001/api/projects")
     .then((res) => {
       return res.data;
     })
-    .catch((err) => console.log("ARAAAA"));
+    .catch((err) => {
+      return -1;
+    });
 };
 
 class ProjectsPanel extends React.Component {
@@ -22,24 +24,38 @@ class ProjectsPanel extends React.Component {
 
   async componentDidMount() {
     const data = await fetchData();
-    this.setState({ loading: false, projectsData: data });
+    if (data !== -1) {
+      this.setState({ loading: false, projectsData: data });
+    }
   }
 
   populateBoxes() {
     console.log(this.state.projectsData);
     return this.state.projectsData.map(({ name, description, image }) => (
-      <ProjectBox name={name} description={description} image={image}></ProjectBox>
+      <ProjectBox
+        name={name}
+        description={description}
+        image={image}
+      ></ProjectBox>
     ));
   }
 
   render() {
     return (
-      <Container>
-        <h1>Projects</h1>
-        <Row>
-          {this.state.loading ? <h1>loading</h1> : this.populateBoxes()}
-        </Row>
-      </Container>
+      <div id="projects">
+        <h1 style={{ clear: "left", marginBottom: "30px" }}>Projects</h1>
+        <Container>
+          <Row>
+            {this.state.loading ? (
+              <div text-align="center">
+                loading...are you sure backend is working?
+              </div>
+            ) : (
+              this.populateBoxes()
+            )}
+          </Row>
+        </Container>
+      </div>
     );
   }
 }

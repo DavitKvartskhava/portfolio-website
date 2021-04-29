@@ -15,14 +15,26 @@ img {
 * {
   box-sizing: border-box;
 }
+
+#github {
+  background-image: url("images/git.png");
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+}
+
+#linkedin {
+  background-image: url("images/linkedin.png");
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+}
+
 #welcome {
   margin-top: 50px;
 }
 
 #face {
-  /* margin-top: 50px;
-  margin-bottom: 30px; */
-  /* height: 300px; */
   width: 100%;
   border-radius: 50%;
   padding: 0px;
@@ -67,15 +79,13 @@ img {
   text-align: center;
 }
 
-.intro {
-  background-image: url("./images/background.png");
-}
-
 .projectBox {
   border: solid 2px;
   border-radius: 10%;
-  margin-right: 30px;
+  margin-right: 8.33%;
+  margin-bottom: 30px;
 }
+
 h2.dark {
   text-align: center;
   color: black;
