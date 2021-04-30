@@ -3,7 +3,9 @@ const express = require('express')
 const mongoose = require('mongoose');
 const app = express()
 const cors = require('cors')
+
 const projectsRoutes = require('./routes/api/projects.js')
+const projectBlogsRoutes = require('./routes/api/projectBlogs.js')
 const port = 3001;
 
 app.get("/", (req, res) => {
@@ -11,7 +13,10 @@ app.get("/", (req, res) => {
 });
 
 app.use(cors({ origin: true, credentials: true }));
+
 app.use("/api/projects", projectsRoutes);
+app.use("/api/projectblogs", projectBlogsRoutes);
+
 
 const DB_CONN_STRING = process.env.DB_CONN_STRING;
 

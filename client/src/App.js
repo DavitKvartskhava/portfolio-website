@@ -15,8 +15,8 @@ function App() {
             <Home />
           </Route>
           {/* Blogs about projects */}
-          <Route path="/blog">
-            <ProjectBlog />
+          <Route exact path="/blog/:name" component={ProjectBlog}>
+
           </Route>
         </Switch>
         <Footer />

@@ -62,7 +62,7 @@ class ProjectsPanel extends React.Component {
                         </div>
                         <Carousel.Caption>
                           <div className="project-descr">
-                            <Link to={"/blog?" + name}>
+                            <Link to={"/blog/"+name}>
                               <h3>{name}</h3>
                               <p>{description}</p>
                             </Link>
