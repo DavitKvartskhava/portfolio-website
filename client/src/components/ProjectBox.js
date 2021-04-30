@@ -1,21 +1,16 @@
 import React from "react";
-import { Col } from "react-bootstrap";
+import Carousel from "react-bootstrap/Carousel";
 
-class ProjectBox extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <>
-        <Col md={{span:3}} sm="12" className="projectBox">
-          <h4>{this.props.name}</h4>
-          {/* {this.props.description} */}
-          <img src={'/images/'+this.props.image} alt={this.props.description} height="auto" width="auto"/>
-        </Col>
-      </>
-    );
-  }
-}
+const ProjectBox = ({ name, description, image }) => {
+  return (
+    <Carousel.Item>
+      <img className="d-block w-100" src={"/images" + image} alt={name} />
+      <Carousel.Caption>
+        <h3>{name}</h3>
+        <p>{description}</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+  );
+};
 
 export default ProjectBox;
