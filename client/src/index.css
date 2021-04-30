@@ -79,11 +79,24 @@ img {
   text-align: center;
 }
 
-.projectBox {
+/* .projectBox {
   border: solid 2px;
   border-radius: 10%;
   margin-right: 8.33%;
   margin-bottom: 30px;
+} */
+.project-tile {
+  background: black;
+  border-radius: 8%;
+}
+
+.project-descr a {
+  color: white;
+}
+
+.project-descr a:hover {
+  text-decoration: none !important;
+  color: gray;
 }
 
 #projects {

@@ -2,7 +2,7 @@ import React from 'react'
 import ProjectsPanel from './ProjectsPanel'
 import PersonalWindow from './PersonalWindow'
 
-const Content = () => {
+const Home = () => {
     return (
         <>
             <PersonalWindow />
@@ -11,4 +11,4 @@ const Content = () => {
     )
 }
 
-export default Content;
+export default Home;

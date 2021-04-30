@@ -1,12 +1,13 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import {Link} from "react-router-dom"
 
 const Header = () => {
   console.log();
   return (
     <>
       <Navbar className="justify-content-between abs" expand="lg">
-        <Navbar.Brand className="ml-sm-2" href="#home">
+        <Navbar.Brand className="ml-sm-2" as={Link} to="/">
           DK
         </Navbar.Brand>
         <Nav>

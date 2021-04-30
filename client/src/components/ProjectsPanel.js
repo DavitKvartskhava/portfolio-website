@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
 
 import axios from "axios";
 
@@ -46,15 +47,26 @@ class ProjectsPanel extends React.Component {
                   this.state.projectsData.map(
                     ({ name, image, description }) => (
                       <Carousel.Item key={name}>
-                        <img
-                          className="d-block w-100"
-                          src={"/images/" + image}
-                          alt={name}
-                          style={{ border: "1px solid", borderRadius: "8%" }}
-                        />
+                        <div className="project-tile">
+                          <img
+                            className="d-block w-100 "
+                            src={"/images/" + image}
+                            alt={name}
+                            style={{
+                              border: "1px solid",
+                              borderRadius: "8%",
+                              objectFit: "cover",
+                              opacity: "0.5",
+                            }}
+                          />
+                        </div>
                         <Carousel.Caption>
-                          <h3>{name}</h3>
-                          <p>{description}</p>
+                          <div className="project-descr">
+                            <Link to={"/blog?" + name}>
+                              <h3>{name}</h3>
+                              <p>{description}</p>
+                            </Link>
+                          </div>
                         </Carousel.Caption>
                       </Carousel.Item>
                     )
