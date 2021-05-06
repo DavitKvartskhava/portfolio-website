@@ -21,7 +21,6 @@ app.use(cors({ origin: true, credentials: true }));
 app.use("/api/projects", projectsRoutes);
 app.use("/api/projectblogs", projectBlogsRoutes);
 
-
 const DB_CONN_STRING = process.env.DB_CONN_STRING;
 
 mongoose

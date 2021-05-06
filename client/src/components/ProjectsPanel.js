@@ -10,7 +10,7 @@ import Col from "react-bootstrap/Col";
 
 const fetchData = () => {
   return axios
-    .get("http://localhost:3000/api/projects")
+    .get("/api/projects")
     .then((res) => {
       return res.data;
     })
