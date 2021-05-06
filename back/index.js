@@ -1,16 +1,20 @@
 require('dotenv').config();
 const express = require('express')
 const mongoose = require('mongoose');
+const path = require('path')
 const app = express()
 const cors = require('cors')
 
 const projectsRoutes = require('./routes/api/projects.js')
 const projectBlogsRoutes = require('./routes/api/projectBlogs.js')
-const port = 3001;
+const port = 3000;
 
-app.get("/", (req, res) => {
-  res.send("Empty page");
-});
+app.use(express.static(path.join(__dirname, '../client/build')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build'));
+})
+
 
 app.use(cors({ origin: true, credentials: true }));
 

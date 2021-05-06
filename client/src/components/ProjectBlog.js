@@ -16,7 +16,7 @@ export default class Blog extends React.Component {
 
   async componentDidMount() {
     var URL =
-      "http://localhost:3001/api/projectblogs/" + this.props.match.params.name;
+      "http://localhost:3000/api/projectblogs/" + this.props.match.params.name;
     await axios
       .get(URL)
       .then((res) => {

@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+
 import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Link } from "react-router-dom";
 
-import axios from "axios";
 
 const fetchData = () => {
   return axios
-    .get("http://localhost:3001/api/projects")
+    .get("http://localhost:3000/api/projects")
     .then((res) => {
       return res.data;
     })
